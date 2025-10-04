@@ -292,6 +292,10 @@ namespace Spindles {
                        _pwm_precision);
     }
 
+    bool PWM::inLaserMode() {
+        return laser_mode->get();  // PWM spindle now respects $32 laser mode setting
+    }
+
     void PWM::set_output(uint32_t duty) {
         if (_output_pin == UNDEFINED_PIN) {
             return;

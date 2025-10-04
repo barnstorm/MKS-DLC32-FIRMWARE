@@ -165,5 +165,8 @@
 
 #define DEFAULT_SPINDLE_FREQ        1000   // 1KHz
 #define DEFAULT_LASER_FULL_POWER    1000
-#define DEFAULT_SPINDLE_MAX_VALUE   1000  
-#define DEFAULT_SPINDLE_MIN_VALUE   0         
+#define DEFAULT_SPINDLE_MAX_VALUE   1000
+#define DEFAULT_SPINDLE_MIN_VALUE   0
+
+#define DEFAULT_BEEP_STATUS                 1
+#define DEFAULT_LANGUAGE_STATUS             1       // default simple english

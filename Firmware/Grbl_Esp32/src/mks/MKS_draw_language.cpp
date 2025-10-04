@@ -5,11 +5,13 @@ LANGUAGE_PAGE_T language_page;
 
 void mc_language_init(void) {
 
-	if(mks_grbl.language = SimpleChinese) {
-
-		 
+	if(mks_grbl.language == SimpleChinese) {
+		// Chinese language strings not implemented - using English as default
+		// TODO: Add Chinese strings from language_ch.h
 	}
-	else if(mks_grbl.language = English) {
+
+	// Default to English for now (SimpleChinese, English, and Deutsch all use English)
+	if(mks_grbl.language == SimpleChinese || mks_grbl.language == English || mks_grbl.language == Deutsch) {
 		mc_language.back = BACK_EN;
 		mc_language.yes = YES_EN;
 		mc_language.no = NO_EN;
